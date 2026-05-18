@@ -116,6 +116,47 @@
             background-color: #005030;
             color: white;
         }
+
+        /* NAV CONTAINER */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* LEFT SIDE (LOGO + NAME) */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* EMPTY BOX FOR FUTURE LOGO */
+.logo-box {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+/* NAV LINKS (RIGHT SIDE) */
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+    color: #F47321;
+}
     </style>
 </head>
 
@@ -123,12 +164,26 @@
 
 <!-- NAVBAR -->
 <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#events">Events</a>
-    <a href="#join">Get Involved</a>
-    <a href="#contact">Contact</a>
+    <div class="nav-container">
+        
+        <!-- LEFT SIDE: LOGO + NAME -->
+        <div class="logo">
+            <div class="logo-box"></div>
+            <span>Heart-to-Heart</span>
+        </div>
+
+        <!-- RIGHT SIDE: LINKS -->
+        <div class="nav-links">
+            Home
+            About
+            Events
+            Get Involved
+            Contact
+        </div>
+
+    </div>
 </nav>
+``
 
 <!-- HERO -->
 <div class="hero">
