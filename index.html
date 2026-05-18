@@ -4,7 +4,7 @@
     <title>Heart-to-Heart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style>
@@ -22,53 +22,72 @@
 
         /* NAVBAR */
         nav {
-    background-color: #005030;
-    padding: 15px;
-    text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #005030;
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
 
-    position: fixed;   /* keeps it visible */
-    top: 0;            /* sticks it to top properly */
-    width: 100%;       /* full width */
-    z-index: 1000;     /* makes sure it stays above everything */
-}
-      .nav-links a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 500;
-}
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.nav-links a:hover {
-    color: #F47321;
-}
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .logo-box {
+            width: 35px;
+            height: 35px;
+            background-color: white;
+            border-radius: 6px;
+            margin-right: 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #F47321;
+        }
 
         /* HERO */
         .hero {
             background: linear-gradient(135deg, #F47321, #005030);
             color: white;
             text-align: center;
-            padding: 90px 20px;
+            padding: 120px 20px;
+            margin-top: 70px;
         }
 
         .hero h1 {
             font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
         }
 
         .hero button {
-            margin-top: 25px;
-            padding: 14px 28px;
+            margin-top: 20px;
+            padding: 12px 25px;
             border: none;
             background-color: white;
             color: #005030;
-            font-weight: bold;
             border-radius: 6px;
+            font-weight: bold;
             cursor: pointer;
-            font-size: 16px;
         }
 
         /* SECTIONS */
@@ -80,10 +99,8 @@
 
         h2 {
             color: #005030;
-            margin-bottom: 15px;
         }
 
-        /* CARDS */
         .card {
             background: white;
             padding: 25px;
@@ -101,62 +118,14 @@
             color: white;
             text-decoration: none;
             border-radius: 6px;
-            font-weight: 500;
         }
 
-        .btn:hover {
-            opacity: 0.9;
-        }
-
-        /* FOOTER */
         footer {
-            margin-top: 60px;
             text-align: center;
             padding: 25px;
             background-color: #005030;
             color: white;
         }
-
-        /* NAV CONTAINER */
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-}
-
-/* LEFT SIDE (LOGO + NAME) */
-.logo {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-/* EMPTY BOX FOR FUTURE LOGO */
-.logo-box {
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 6px;
-    margin-right: 10px;
-}
-
-/* NAV LINKS (RIGHT SIDE) */
-.nav-links a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* HOVER EFFECT */
-.nav-links a:hover {
-    color: #F47321;
-}
     </style>
 </head>
 
@@ -165,14 +134,11 @@
 <!-- NAVBAR -->
 <nav>
     <div class="nav-container">
-
-        <!-- LEFT SIDE -->
         <div class="logo">
             <div class="logo-box"></div>
             <span>Heart-to-Heart</span>
         </div>
 
-        <!-- RIGHT SIDE LINKS -->
         <div class="nav-links">
             Home
             About
@@ -180,14 +146,14 @@
             Get Involved
             Contact
         </div>
-
     </div>
 </nav>
 
 <!-- HERO -->
-<div class="hero">
+<div class="hero" id="home">
     <h1>Heart-to-Heart</h1>
     <p>Connecting Patients Through Cardiac Care</p>
+
     #join
         <button>Join Our Community</button>
     </a>
@@ -195,42 +161,21 @@
 
 <!-- ABOUT -->
 <section id="about">
-<h2>About Us</h2>
-
+    <h2>About Us</h2>
     <div class="card">
         <p>
-        <strong>Heart-to-Heart</strong> is a student-led initiative founded in Spring 2026 by medical students at the University of Miami. Inspired by the work of the BraveHearts program at St. Francis Hospital in New York, Heart-to-Heart was created to address a critical but often overlooked gap in cardiovascular care: the need for connection, encouragement, and ongoing support during cardiac rehabilitation.
-        </p>
-    
-        <p>
-        For many patients, recovery after a cardiac event can feel isolating and uncertain. While clinical care provides the foundation for recovery, there is often limited opportunity to connect with others who understand the experience firsthand. Heart-to-Heart aims to change that by building a supportive community where patients can share their journeys, learn from one another, and feel empowered as they move forward.
-        </p>
-    
-        <p>
-        Our core mission is to connect cardiac rehabilitation patients with peers who have gone through or are currently navigating similar challenges. By creating a space for open conversation and shared experience, we seek to show patients that recovery is not something they face alone—and that long-term success is both achievable and sustainable.
-        </p>
-    
-        <p>
-        We organize small-group events that bring patients together in a relaxed, welcoming environment, encouraging meaningful conversation and peer support. In addition, we offer educational sessions focused on lifestyle interventions, recovery strategies, and practical approaches to improving heart health. These initiatives are designed to complement clinical care and provide patients with tools and confidence beyond the hospital setting.
-        </p>
-    
-        <p>
-        Heart-to-Heart is focused on serving cardiac rehabilitation patients within the University of Miami community, with plans to expand into Jackson Health System and UHealth networks. Our long-term vision is to scale this model across hospitals throughout the Miami area and eventually extend it nationwide, creating a broader network of patient-centered cardiovascular support.
-        </p>
-    
-        <p>
-        At its core, Heart-to-Heart is built on a simple idea: that connection is a powerful part of healing. By bringing patients together, we aim to make the recovery process more supportive, more accessible, and more human.
+        Heart-to-Heart is a student-led initiative founded in Spring 2026 by medical students at the University of Miami. Inspired by the BraveHearts program at St. Francis Hospital in New York, our mission is to connect cardiac rehabilitation patients and build a peer support network that empowers individuals throughout recovery.
         </p>
     </div>
 </section>
-    
+
 <!-- EVENTS -->
 <section id="events">
     <h2>Events</h2>
     <div class="card">
         <h3>Heart-to-Heart Connect</h3>
         <p>
-        Join us for small-group conversations about heart health in a relaxed, welcoming environment. These sessions focus on open discussion, shared experiences, and building meaningful connections.
+        Small-group conversations where patients can share experiences, ask questions, and support each other in a welcoming environment.
         </p>
     </div>
 </section>
@@ -240,7 +185,7 @@
     <h2>Get Involved</h2>
     <div class="card">
         <p>
-        Interested in attending events or learning more about Heart-to-Heart? Join our community and stay connected.
+        Interested in attending events or learning more? Join our community below.
         </p>
         #
             <div class="btn">Sign Up</div>
@@ -263,3 +208,4 @@
 
 </body>
 </html>
+``
