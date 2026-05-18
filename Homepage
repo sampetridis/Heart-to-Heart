@@ -1,1 +1,185 @@
-index.html 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart-to-Heart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f7f6;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* NAVBAR */
+        nav {
+            background-color: #005030;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #F47321;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #F47321, #005030);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .hero button {
+            margin-top: 25px;
+            padding: 14px 28px;
+            border: none;
+            background-color: white;
+            color: #005030;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* SECTIONS */
+        section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #005030;
+            margin-bottom: 15px;
+        }
+
+        /* CARDS */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        /* BUTTON */
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background-color: #F47321;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            padding: 25px;
+            background-color: #005030;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    #Home</a>
+    #aboutAbout</a>
+    #eventsEvents</a>
+    #joinGet Involved</a>
+    #contactContact</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Heart-to-Heart</h1>
+    <p>Connecting Patients Through Cardiac Care</p>
+    #join
+        <button>Join Our Community</button>
+    </a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+        <p>
+        Heart-to-Heart was founded by students at the University of Miami and inspired by a similar program at St. Francis Hospital in New York City. Our mission is to connect cardiac rehabilitation patients with one another, creating a peer support network that helps individuals feel supported, informed, and empowered throughout their health journey.
+        </p>
+    </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+    <h2>Events</h2>
+    <div class="card">
+        <h3>Heart-to-Heart Connect</h3>
+        <p>
+        Join us for small-group conversations about heart health in a relaxed, welcoming environment. These sessions focus on open discussion, shared experiences, and building meaningful connections.
+        </p>
+    </div>
+</section>
+
+<!-- JOIN -->
+<section id="join">
+    <h2>Get Involved</h2>
+    <div class="card">
+        <p>
+        Interested in attending events or learning more about Heart-to-Heart? Join our community and stay connected.
+        </p>
+        #
+            <div class="btn">Sign Up</div>
+        </a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: your-email@miami.edu</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Heart-to-Heart | University of Miami</p>
+</footer>
+
+</body>
+</html>
