@@ -122,20 +122,30 @@ nav {
 
         /* HERO */
         .hero {
-            background: linear-gradient(135deg, #F47321, #005030);
-            color: white;
-            text-align: center;
-            padding: 90px 20px;
-        }
+    background: linear-gradient(135deg, #F47321, #005030);
+    color: white;
+
+    height: 100vh;                  /* FULL SCREEN HEIGHT */
+    display: flex;                 /* enables centering */
+    flex-direction: column;
+    justify-content: center;       /* vertical center */
+    align-items: center;           /* horizontal center */
+
+    text-align: center;
+    padding: 0 20px;
+
+    margin-top: 70px;              /* keeps space for navbar */
+}
 
         .hero h1 {
-            font-size: 42px;
+            font-size: 48px;
             margin-bottom: 15px;
         }
 
         .hero p {
-            font-size: 18px;
-        }
+            font-size: 20px;
+            max-width: 600px;
+}
 
         .hero button {
             margin-top: 25px;
