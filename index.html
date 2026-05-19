@@ -27,7 +27,40 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 10px 20px;
     z-index: 1000;
+}
+
+/* FULL WIDTH LAYOUT */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* LOGO LEFT */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* BIGGER LOGO */
+.logo-img {
+    height: 50px;   /* increase size */
+}
+
+/* NAV LINKS RIGHT */
+.nav-links a {
+    color: white !important;   /* FIX purple issue */
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+    color: #F47321;
 }
 
 /* Container */
@@ -182,7 +215,7 @@ nav {
 /* NAV LINKS (RIGHT SIDE) */
 .nav-links a {
     color: white;
-    margin-left: 20px;
+    margin-left: 30px;
     text-decoration: none;
     font-weight: 500;
 }
@@ -198,7 +231,7 @@ section {
        
 
 .logo-img {
-    height: 30px;
+    height: 600px;
     width: auto;
     margin-right: 10px;
 }
