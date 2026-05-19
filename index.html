@@ -36,6 +36,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0 20px; /* added to see if it aligns nav links to the left */
+    box-sizing: border-box; /* added to see if it aligns nav links to the left */
+
 }
 
 /* LOGO LEFT + RESIZE LOGO*/
@@ -62,17 +65,6 @@ nav {
     color: #F47321;
 }
 
-/* Container
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-    padding: 15px 20px;
-}
-
-        */
         
 .nav-container {
     display: flex;
@@ -102,11 +94,20 @@ nav {
     margin-right: 10px;
 }
 
-/* RIGHT LINKS */
+/* RIGHT LINKS 
 .nav-links {
     display: flex;
     align-items: center;
 }
+        */
+ /* RIGHT LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;   /* spacing between links */
+}
+
 
 .nav-links a {
     color: white;
@@ -193,16 +194,6 @@ nav {
             background-color: #005030;
             color: white;
         }
-
-        /* NAV CONTAINER - DELETED THIS TO SEE IF IT GETS RID OF CENTRAL BOX 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 600px;
-    margin: auto;
-}
-        */
 
 /* LEFT SIDE (LOGO + NAME) */
 .logo {
